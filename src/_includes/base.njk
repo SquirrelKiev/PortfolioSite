@@ -1,0 +1,34 @@
+---
+socials: 
+    - { icon: "github", site: "https://github.com/SquirrelKiev" }
+    - { icon: "twitter", site: "https://twitter.com/SquirrelKiev" }
+    - { icon: "mail", site: "mailto:laidbackenon:outlook.com" }
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        <div class="wrapper">
+            <div class=content>
+                <!-- Content begins here -->
+                {{ content | safe }}
+                <!-- Content ends here -->
+            </div>
+        </div>
+        <footer>
+        {% for social in socials %}
+            <a class="social-icon" href={{social.site}}>{% feather social.icon %}</a>
+        {% endfor %}
+        </footer>
+    </body>
+</html>
