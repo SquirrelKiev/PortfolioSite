@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@400;700&display=swap');
+
+body {
+    font-family: v.$body-font-family;
+    font-size: 18px;
+    color: v.$text-color;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: v.$header-font-family;
+    font-size: 2em;
+}
+
+h2 {
+    font-weight: bold;
+    font-family: v.$header-font-family;
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.emoji {
+    max-width: 1.2em;
+    vertical-align: -20%;
+}

@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+#intro-text-header {
+    display: flex;
+    margin: 1em 0;
+
+    #side-image {
+        max-width: 72px;
+        margin-right: 2ch;
+    }
+
+    #intro-title {
+        margin: .2em 0;
+    }
+
+    #intro-subtitle {
+        margin: .5em 0;
+    }
+}
+
+.underlined {
+    border-bottom: .1em solid v.$highlight-color;
+    padding-bottom: .05em;
+}
